@@ -1,0 +1,67 @@
+p{
+	clear: both;
+	color: #fff;
+	font-family: tahoma, arial;
+	padding: 0 25px;
+	}
+
+#salon{
+	border: 3px solid #f00;
+	}
+	
+body{
+	background: url("../images/nightstars.jpg");
+	width: 960px;
+	}
+	
+h2{
+	float: right;
+	font-family: "Alex Brush", arial;
+	text-shadow: 4px 4px 2px #fff;
+	font-size: 43px;
+	padding: 70px 20px 0 0;
+	margin: 0;
+	}
+
+h1{
+	float: left;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	font-family: Ruthie, arial;
+	font-weight: normal;
+	font-size: 65px
+
+	}
+	
+#main{
+	clear: both;
+	background: #f00;
+	}
+	 
+a:link{
+	color: #f00;
+	}
+
+a:active{
+	color: #ff0;
+	}
+
+a:hover{
+	color: #00f;
+	}
+	
+ul{
+	clear: left;
+	text-align: right;
+	padding: 0;
+	}
+	
+ul li{
+	display: inline;
+	}
+
+h3, h4{
+	color: #fff;
+	text-shadow: 3px 3px 3px #f00;
+	}	
