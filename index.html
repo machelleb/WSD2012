@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=deice-width, initial-scale=1, maximum-scale=1">
 	<title>Studio MC</title>
     <link rel="stylesheet" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
 	
 <body>
-<header>
+    <div id="entirety">
+    <header>
 
 <!-- This is title with navigation -->
 	<h1>Studio MC</h1>
@@ -23,16 +25,14 @@
 	</nav>
 </header>
 
-    <div id="main">
 <!-- This is Logo -->	
 
-	<img src="images/Studiomclogo.jpg" width="250" height="300" alt="Studio MC Logo"
-	title="Studio MC">
+	<div id="logo"><img src="images/Studiomclogo.jpg" alt="Studio MC Logo"
+	title="Studio MC"></div>
 
 <!-- This is the tagline -->	
 	<h2>"Saving the world one hairstyle at a time"</h2>
 	
-    </div>
 <!--main paragraphs to describe salon-->
     <div id="salon">
 	<p><span>When you are at Studio MC be prepared to <em>relax</em> and enjoy your one on one time in the chair. I focus greatly on your needs as well as the condition and health of your hair. My goal is to make sure you leave <strong>100% satisfied</strong> with a smile on your face. I have a healing hand and a listening ear ready to serve you.</span></p>
@@ -42,35 +42,36 @@
 	
 <!-- This is the sample Photo gallery with link to see more-->
 	<h3>Photo Gallery</h3>
-	<a href="images/longcurls.jpg"> <img src="images/longcurls.jpg" width="150" height="200" alt="Feathered Curls"
-	title="Feathered Curls">
-	<a href="images/ombrecurls.jpg"> <img src="images/ombrecurls.jpg" width="150" height="200" alt="Ombre color w/ curls"
-	title="Ombre color w/ curls">
-	<a href="images/pinkhair.jpg"> <img src="images/pinkhair.jpg" width="150" height="200" alt="Pink Hair"
-	title="Pink Hair">
-	<a href="images/purplehair.jpg"> <img src="images/purplehair.jpg" width="150" height="200" alt="Purple Hair"
-	title="Purple Hair">
-	<a href="images/updo.jpg"> <img src="images/updo.jpg" width="150" height="200" alt="Updo with braid and curls"
-	title="Updo with braid and curls">
+	<div id="photogallery">
+	<ol>
+	    <li id="longcurls"><a href="images/longcurls.jpg"> <img src="images/longcurls.jpg" alt="Feathered Curls" title="Feathered Curls"></a></li>
+	     <li id="ombrecurls"><a href="images/ombrecurls.jpg"> <img src="images/ombrecurls.jpg" alt="Ombre color w/ curls" title="Ombre color w/ curls"></a></li>
+	     <li id="pinkhair"><a href="images/pinkhair.jpg"> <img src="images/pinkhair.jpg" alt="Pink Hair" title="Pink Hair"></a></li>
+	     <li id="purplehair"><a href="images/purplehair.jpg"> <img src="images/purplehair.jpg" alt="Purple Hair" title="Purple Hair"></a></li>
+	     <li id="updo"><a href="images/updo.jpg"> <img src="images/updo.jpg" alt="Updo with braid         and curls" title="Updo with braid and curls"></a></li>
+	</ol>
+	</div>
 	
-	<a href="photogallery.html">View more...</a>
+	<div id="viewmore"><a href="photogallery.html" class="button red">View more...</a></div>
 
 	
 <!--this is products used in salon with links to sites-->	
 	<aside>
 	<h4>Products</h4>
+	<div id="products">
 	<ol>
-	    <li><a href="http://www.syntonicsglobal.com/">Syntonics</a></li>
-	    <li><a href="http://www.mizani-usa.com/">Mizani</a></li>
-	    <li><a href="http://www.redken.com/">Redken</a></li>
-	    <li><a href="http://www.matrix.com/">Matrix</a></li>
+	    <li><a href="http://www.syntonicsglobal.com/">Syntonics</a> info about syntonics. It is a great product to use on all hair types. It gives a tingling sensation on the scalp for pleasure.</li>
+	    <li><a href="http://www.mizani-usa.com/">Mizani</a> info about syntonics. It is a great product to use on all hair types. It gives a tingling sensation on the scalp for pleasure.</li>
+	    <li><a href="http://www.redken.com/">Redken</a> info about syntonics. It is a great product to use on all hair types. It gives a tingling sensation on the scalp for pleasure.</li>
+	    <li><a href="http://www.matrix.com/">Matrix</a> info about syntonics. It is a great product to use on all hair types. It gives a tingling sensation on the scalp for pleasure.</li>
     </ol>
+    </div>
     </aside>
    
 <!--here is footer with salon info-->    
     <footer>
-    &copy Studio MC * Sola Salons 11708 W.95th St, Suite 101, Overland Park, KS 66214 * 913-709-6104 * hairstylist85@aol.com
+    &copy; Studio MC * Sola Salons 11708 W.95th St, Suite 101, Overland Park, KS 66214 * 913-709-6104 * hairstylist85@aol.com
     </footer>
-    
+    </div>
 </body>
 </html>

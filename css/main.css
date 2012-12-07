@@ -11,20 +11,29 @@ p{
 	-moz-box-shadow: 2px 2px 2px #fff;
 	-webkit-box-shadow: 2px 2px 2px #fff;
 	box-shadow: 5px 5px 5px #fff;
-	margin: 10px 0;
+	margin: 30px auto;
+	background-color: #000;
+	clear: both;
+	opacity: 0.85;
 	}
 	
 body{
-	background: #000;
-	width: 960px;
+	padding: 0% 4.6875%; /*45px*/
 	margin: 0 auto;
+	background-image: url("../images/Gradient background.jpg");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: top center;
+	font-size: 100%;
 	}
 	
 h2{
 	float: right;
+	color: #f00;
 	font-family: "Alex Brush", arial;
 	text-shadow: 4px 4px 2px #fff;
-	font-size: 43px;
+	font-size: 3.0625em; /*50px/16px*/
+	font-weight: normal;
 	padding: 70px 20px 0 0;
 	margin: 0;
 	}
@@ -36,14 +45,14 @@ h1{
 	margin: 0;
 	font-family: Ruthie, arial;
 	font-weight: normal;
-	font-size: 75px
+	font-size: 4.6875em; /*75px/16px*/
 
 	}
-	
-#main{
-	clear: both;
-	background: #f00;
-	opacity: 0.85;
+
+#logo{
+	float: left;
+	width: 20.8333333%;
+	margin: 15px auto;
 	}
 	 
 a:link{
@@ -60,16 +69,16 @@ a:hover{
 
 ul{
 	clear: left;
-	width: 960px;
+	width: 100%; /*960*/
 	list-style-type: none;
 	padding: 30px 10px;
 	}
 
 ul li{
-	width: 150px;
+	width: 15.625%; /*960/150*/
 	float: left;
 	}
-	
+		
 h3, h4{
 	color: #fff;
 	text-shadow: 3px 3px 3px #f00;
@@ -77,9 +86,135 @@ h3, h4{
 
 footer{
 	color: #fff;
+	padding: 10px 0 0 0;
 	}
 
-ol{
+#products ol{
 	color: #fff;
 	list-style-type: square;
+	}
+
+#products{
+	-moz-column-count: 3;
 	}	
+
+#viewmore{
+	clear: left;
+	padding: 20px;
+	}
+
+#photogallery ol{
+	width: 100%; /*960px*/
+	list-style-type: none;
+	margin: 20px auto;
+	padding: 10px;
+	}
+
+#photogallery li{
+	float: left;
+	margin-left: 10px;
+	}
+
+.button {
+	display: inline-block;
+	/*zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	/*display: inline;*/
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% tahoma, arial;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+.small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+
+.button:link {
+	color: #fff
+	}
+	
+/* red */
+.red {
+	color: #faddde;
+	border: solid 1px #980c10;
+	background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');*/
+}
+.red:hover {
+	background: #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');*/
+}
+.red:active {
+	color: #de898c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+	background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');*/
+}
+#logo img{
+	max-width: 100%;
+	}
+@media screen and (min-width: 768px) and (max-width: 959px){
+	/*#entirety {background-color: #f00;}*/
+	h2 {font-size: 2.375em;}
+	}
+	
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	/*#entirety {background-color: #ff0;}*/
+	h2 {font-size: 1.7em;
+		padding: 50px 0;}
+	ul li{ clear: both;}
+	#logo {clear: left;
+			margin: 0 0;
+			padding: 20px 0 0 0;}
+	#updo {display: none;}
+	#products{-moz-column-count: 2;}
+	footer {padding: 20px 10px;}
+	}
+	
+@media only screen and (max-width: 479px){
+	/*#entirety {background-color: #f0f;}*/
+	#logo {clear: both;
+			margin: 0 0;
+			padding: 20px 0 0 0;}
+	h2 {font-size: 1.6em;
+		text-align: center;
+		padding: 10px 0;
+		margin: 0 auto;}
+	ul li{ clear: both;}
+	#ombrecurls {display: none;}
+	#pinkhair {display: none;}
+	#updo {display: none;}
+	#products{-moz-column-count: 1;}
+	}
