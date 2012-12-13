@@ -82,23 +82,9 @@ ul li{
 h3, h4{
 	color: #fff;
 	text-shadow: 3px 3px 3px #f00;
-	}
-
-footer{
-	color: #fff;
-	padding: 10px 0 0 0;
-	}
-
-#products ol{
-	color: #fff;
-	list-style-type: square;
-	}
-
-#products{
-	-moz-column-count: 3;
 	}	
 
-#viewmore{
+.viewmore{
 	clear: left;
 	padding: 20px;
 	}
@@ -182,12 +168,61 @@ footer{
 	background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
 	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');*/
 }
+
 #logo img{
 	max-width: 100%;
 	}
+
+form{
+	color: #fff;
+	padding: 0.3em;
+	margin: 0.3em;
+	width: 40%;
+	}
+
+table{
+	border-collapse: collapse;
+	width: 40%;
+	}
+
+td{
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 0.4em;
+}
+
+th{
+	text-align: left;
+	background-color: #fff;
+	padding: 0.4em;
+	color: #000;
+}
+
+#submit{
+	color: #fff;
+	background-color: #f00;
+	border-color: #f00;
+	margin: 0.5em;
+}
+
+footer{
+	color: #fff;
+	padding: 10px 0 0 0;
+	}
+
+#products ol{
+	color: #fff;
+	list-style-type: square;
+	}
+
+#products{
+	-moz-column-count: 3;
+	width:100%;
+	}
+	
 @media screen and (min-width: 768px) and (max-width: 959px){
 	/*#entirety {background-color: #f00;}*/
-	h2 {font-size: 2.375em;}
+	h2 {font-size: 2.375em;}	
 	}
 	
 @media only screen and (min-width: 480px) and (max-width: 767px){
